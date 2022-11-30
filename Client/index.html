@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <script src="http://unpkg.com/axios/dist/axios.min.js" defer></script>
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
     <title>To-do List</title>
   </head>
   <body>
     
       <header id="header">
-        <h1>Toodooz</h1>
+        <h1 id="title">Toodoo</h1>
       </header>
 
-    <main id="list-container">
-      <section id="list-input">
+    <main id="todo-container">
+      <section id="todo-section">
         <h2>What needs done?</h2>
-        <input type="text" placeholder="Write your task here" /><button id="add-task">
+        <input id="todo-input" type="text" placeholder="Write your task here" /><button id="add-todo" >
           ✔
         </button>
       </section>
 
-      <section id="show-task"></section>
+      <section id="show-todo"></section>
     </main>
     <footer id="footer">
       <p>Noah Cain 2022 @ <a href="https://github.com/NCain24">GitHub</a></p>

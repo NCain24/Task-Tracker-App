@@ -1,25 +1,25 @@
-const task = require('./db.json')
+const todos = require('./db.json')
 let globalId = 4
 
 module.exports = {
 
-    createTask: (req, res) => {
-        const {task} = req.body
+    createTodo: (req, res) => {
+        const {todo} = req.body
 
-        const newTask = {
+        const newTodo = {
             id: globalId,
-            task
+            todo
         }
 
-        task.push(newTask)
+        todos.push(newTodo)
 
         globalId++
 
-        res.status(200).send(task)
+        res.status(200).send(todos)
     },
 
-    getTask: (req, res) => {
-        res.status(200).send(task)
+    getTodo: (req, res) => {
+        res.status(200).send(todos)
     }
 
 }

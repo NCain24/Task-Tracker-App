@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "task": "Laundry"
+    "todo": "Laundry"
   },
 
   {
     "id": 2,
-    "task": "Carwash"
+    "todo": "Carwash"
     
   },
 
   {
     "id": 3,
-    "task": "Work"
+    "todo": "Work"
     
   }
 ]
