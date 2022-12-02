@@ -8,7 +8,7 @@ const createTodoContainer = (task) => {
     newTodo.classList.add('todo-container')
     newTodo.innerHTML = `
         <h3>${task.todo}</h3>
-        <button onclick="deleteTodo(${task.id})">Delete</button>
+        <button class="delete" onclick="deleteTodo(${task.id})">Delete</button>
     `
 
     showTodo.appendChild(newTodo)
@@ -36,6 +36,8 @@ const addNewTodo = () => {
     axios.post(`${baseURL}/addTodo`, body)
     .then(res => showTodos(res.data))
     .catch(err => console.error(err))
+
+    todo.textContent = ''
 }
 
 const updateTodo = (id, done) => {

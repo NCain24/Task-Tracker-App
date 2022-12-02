@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 
 * {
     
@@ -22,10 +23,13 @@ body {
     align-self: flex-end;
     margin-right: 10%;
     margin-top: 3%;
-    
 }
 
 #todo-section > h2 {
+    padding-left: 30px;
+}
+
+button, #add-todo {
     padding-left: 30px;
 }
 
@@ -37,7 +41,8 @@ h2 {
 h3 {
     font-size: 26px;
     color: #89CFF0;
-    padding-left: 30px;
+    padding-left: 100px;
+    margin-bottom: 0;
 }
 
 p {
@@ -47,9 +52,26 @@ p {
 button {
     color: #FFB660;
     font-size: 20px;
+    font-weight: bolder;
     border: none;
     background-repeat:no-repeat;
     background-color: transparent;
+}
+
+button, .delete {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding-top: 10px;
+    font-size: 26px;
+    color:#FFB660
+}
+
+::placeholder {
+    opacity: 40%;
+    font-size: 26px;
+    color:#FFB660
 }
 
 #header > #title {
@@ -61,7 +83,7 @@ button {
     color:#FFB660
 }
 
-#title-span {
+.title-span {
     color:#89CFF0
 }
 
@@ -76,19 +98,21 @@ button {
 
 #todo-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     margin-left: 3%;
     margin-right: 70%;
-    padding-bottom: 5%;
-    background-color: rgba(115, 107, 96, 0.75);
-    border-radius: 10px;
+    padding-bottom: 1%;
+    background-color: rgba(115, 107, 96, 0.3);
+    border-radius: 5px;
 }
 
 #todo-input {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #000;
-    ;
+    border-bottom: 3px solid #000;
+    padding-left: 30px;
+    width: 80%;
+    
 }
 
 .page-bottom {
@@ -97,11 +121,17 @@ button {
 
 #footer {
     position: fixed;
+    font-family: 'Splash', cursive;
+
     bottom: 0;
     left: 3%;
     height: 4rem;
     text-shadow: 0px 1px 3px;
     color: darkgrey;
+}
+#footer > p {
+    font-family: 'Splash', cursive;
+    font-size: 20px;
 }
 
 a {
