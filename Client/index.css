@@ -1,11 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 * {
-    background: url(images/background.jpg) no-repeat center center fixed;
-    background-size: cover;
+    
+    
+    background-blend-mode: color-burn;
     font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
 }
 
-html {
+body {
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#header {
+    align-self: flex-end;
+    margin-right: 10%;
+    margin-top: 3%;
+    
+}
+
+#todo-section > h2 {
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #89CFF0
+}
+
+h3 {
+    font-size: 26px;
+    color: #89CFF0;
+    padding-left: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    color: #FFB660;
+    font-size: 20px;
+    border: none;
+    background-repeat:no-repeat;
+    background-color: transparent;
+}
+
+#header > #title {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    font-size: 38px;
+    text-shadow: 0px 1px 4px;
+    color:#FFB660
+}
+
+#title-span {
+    color:#89CFF0
+}
+
+#header > #title-p {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    margin-bottom: 5%;
+    text-shadow: 0px 1px 4px;
+    color:#FFB660
+}
+
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 70%;
+    padding-bottom: 5%;
+    background-color: rgba(115, 107, 96, 0.75);
+    border-radius: 10px;
+}
+
+#todo-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    ;
+}
+
+.page-bottom {
+    
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 3%;
+    height: 4rem;
+    text-shadow: 0px 1px 3px;
+    color: darkgrey;
+}
+
+a {
+    color: darkgrey;
+    text-decoration-line: none;
 }

@@ -1,18 +1,21 @@
 [
   {
     "id": 1,
-    "todo": "Laundry"
+    "todo": "Laundry",
+    "done": false
   },
 
   {
     "id": 2,
-    "todo": "Carwash"
+    "todo": "Carwash",
+    "done": false
     
   },
 
   {
     "id": 3,
-    "todo": "Work"
+    "todo": "Work",
+    "done": false
     
   }
 ]

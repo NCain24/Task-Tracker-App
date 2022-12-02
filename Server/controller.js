@@ -20,6 +20,21 @@ module.exports = {
 
     getTodo: (req, res) => {
         res.status(200).send(todos)
+    },
+
+    updateTodo: (req, res) => {
+        const i = todos.findIndex(el => el.id === +req.params.id)
+        const {crossOff} = req.body
+
+        if (crossOff === true) {
+            todos[i].checked === true
+        }
+    },
+
+    deleteTodo: (req, res) => {
+        const i = todos.findIndex(el => el.id === +req.params.id)
+        todos.splice(i, 1)
+        res.status(200).send(todos)
     }
 
 }
