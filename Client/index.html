@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="./index.css" />
     <script src="http://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="./index.js" defer></script>
-    <title>To-do List</title>
+    <title>TASKTRACK</title>
   </head>
   <body>
     <div id="page-container">
       <header id="header" class="page-top">
-        <h1 id="title"><span class="title-span">T</span>ASK<span class="title-span">T</span>RACK</h1>
-        <p id="title-p">Track your tasks</p>
+        <h1 id="title"><span class="title-span">t</span>ASK<span class="title-span">t</span>RACK</h1>
+        <p id="title-p"></p>
       </header>
 
     <main id="todo-container">
       <section id="todo-section">
-        <h2>Today:</h2>
-        <input id="todo-input" type="text" placeholder="Write your task here"/><button id="add-todo" >
+        <h2>Today is:</h2>
+        <h3 id="date-time"></h3>
+        <input required id="todo-input" type="text" placeholder="Write your task here"/><button id="add-todo" >
           Add
         </button>
       </section>
@@ -27,7 +28,7 @@
       <section id="show-todo"></section>
     </main>
     <footer id="footer" class="page-bottom">
-      <p>Noah Cain @ <a href="https://github.com/NCain24">GitHub</a></p>
+      <p>Noah Cain @ <a href="https://github.com/NCain24"><img src="./images/github-mark.png"></a></p>
     </footer>
   </div>
   </body>

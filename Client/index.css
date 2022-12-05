@@ -1,53 +1,86 @@
+/*FONTS USED*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
 
+/*BASIC PAGE LAYOUT*/
 * {
-    
-    
-    background-blend-mode: color-burn;
     font-family: 'Dosis', sans-serif;
     box-sizing: border-box;
     padding: 0;
-}
-
-body {
-    background: url(images/bg.jpg) no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
     margin: 0;
 }
 
+body {
+    display: flex;
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/*HEADER TITLE*/
+
 #header {
     align-self: flex-end;
+    position: sticky;
+    right: 0;
+    top: 10px;
     margin-right: 10%;
     margin-top: 3%;
 }
 
-#todo-section > h2 {
-    padding-left: 30px;
+h1 {
+    position: relative;
+    outline: none;
+    animation: pulsate 1.5s infinite alternate;
 }
 
-button, #add-todo {
-    padding-left: 30px;
+.title-span {
+    color:#89CFF0;
+    animation: pulsatespan 1.5s infinite alternate
 }
 
-h2 {
-    font-size: 32px;
-    color: #89CFF0
+/*CONTAINER FOR ADD TASK AND SHOW TASK*/
+
+#todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
 }
 
-h3 {
-    font-size: 26px;
-    color: #89CFF0;
-    padding-left: 100px;
-    margin-bottom: 0;
+/*ADD TASK SECTION*/
+
+#todo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-p {
+#date-time {
+    color:#FFB660;
+}
+
+#todo-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px groove #FFB660;
+    width: 30%;
+}
+
+::placeholder {
+    opacity: 40%;
     font-size: 20px;
+    color:#FFB660;
+    text-align: center;
 }
+
+#add-todo:hover {
+    color: green;
+}
+
+
 
 button {
     color: #FFB660;
@@ -56,23 +89,32 @@ button {
     border: none;
     background-repeat:no-repeat;
     background-color: transparent;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    color: red;
 }
 
 button, .delete {
-    margin-bottom: 20px;
+    padding: 0px;
+    /* margin-bottom: 10px; */
+}
+
+section, #show-todo {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 input[type="text"] {
     padding-top: 10px;
     font-size: 26px;
-    color:#FFB660
+    color:#FFB660;
+    outline: none;
 }
 
-::placeholder {
-    opacity: 40%;
-    font-size: 26px;
-    color:#FFB660
-}
+
 
 #header > #title {
     display: flex;
@@ -83,58 +125,102 @@ input[type="text"] {
     color:#FFB660
 }
 
-.title-span {
-    color:#89CFF0
-}
 
-#header > #title-p {
-    display: flex;
-    justify-content: end;
-    margin: 0;
-    margin-bottom: 5%;
-    text-shadow: 0px 1px 4px;
-    color:#FFB660
-}
 
-#todo-container {
+.todo-container {
+    margin-left: 5%;
+    margin-right: 10%;
     display: flex;
     flex-flow: column wrap;
-    margin-left: 3%;
-    margin-right: 70%;
-    padding-bottom: 1%;
-    background-color: rgba(115, 107, 96, 0.3);
-    border-radius: 5px;
+
 }
 
-#todo-input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid #000;
-    padding-left: 30px;
-    width: 80%;
-    
-}
-
-.page-bottom {
-    
-}
+/*FOOTER*/
 
 #footer {
     position: fixed;
     font-family: 'Splash', cursive;
-
     bottom: 0;
-    left: 3%;
+    right: 3%;
     height: 4rem;
     text-shadow: 0px 1px 3px;
     color: darkgrey;
 }
-#footer > p {
+
+/*TEXT-SIZING*/
+
+p {
     font-family: 'Splash', cursive;
     font-size: 20px;
 }
-
-a {
-    color: darkgrey;
-    text-decoration-line: none;
+h2 {
+    font-size: 32px;
+    color: #FFB660
 }
+
+h3 {
+    font-size: 26px;
+    color: #89CFF0;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+/*KEYFRAMES FOR TITLE*/
+
+/* @keyframes pulsate {
+    100% {
+
+      text-shadow:
+        0 0 4px #FFB660,
+        0 0 11px #FFB860,
+        0 0 19px #FFB660,
+        0 0 40px #FFB660,
+        0 0 80px #FFB660,
+        0 0 90px #FFB660,
+        0 0 100px #FFB660,
+        0 0 150px #FFB660;
+    }
+    0% {
+     
+      text-shadow:
+        0 0 2px #FFB660,
+        0 0 4px #FFB660,
+        0 0 6px #FFB660,
+        0 0 10px #FFB660,
+        0 0 45px #FFB660,
+        0 0 55px #FFB660,
+        0 0 70px #FFB660,
+        0 0 80px #FFB660;
+    }
+  }
+  
+@keyframes pulsatespan {
+    100% {
+
+      text-shadow:
+        0 0 4px #89CFF0,
+        0 0 11px #89CFF0,
+        0 0 19px #89CFF0,
+        0 0 40px #89CFF0,
+        0 0 80px #89CFF0,
+        0 0 90px #89CFF0,
+        0 0 100px #89CFF0,
+        0 0 150px #89CFF0;
+    }
+    0% {
+     
+      text-shadow:
+        0 0 2px #89CFF0,
+        0 0 4px #89CFF0,
+        0 0 6px #89CFF0,
+        0 0 10px #89CFF0,
+        0 0 45px #89CFF0,
+        0 0 55px #89CFF0,
+        0 0 70px #89CFF0,
+        0 0 80px #89CFF0;
+    }
+  }
+   */
