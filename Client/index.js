@@ -6,16 +6,16 @@ const enterInput = document.querySelector('#todo-input')
 
 const showTime = () => {
     const date = new Date()
-    document.querySelector('#date-time').innerHTML= date.toLocaleString()
+    document.querySelector('#date-time').innerHTML= date.toLocaleDateString()
 }
 
 const createTodoContainer = (task) => {
     const newTodo = document.createElement('section')
     newTodo.classList.add('todo-container')
     newTodo.innerHTML = `
-        
-            <h3>${task.todo}</h3><button class="delete" onclick="deleteTodo(${task.id})">Delete</button>
-        
+            <input class="check" type="checkbox"/>
+            <h3>${task.todo}</h3>
+            <button class="delete" onclick="deleteTodo(${task.id})">Delete</button>
     `
 
     showTodo.appendChild(newTodo)
