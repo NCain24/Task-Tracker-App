@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "todo": "Laundry",
+    "todo": "Meeting with the Mayor to discuss revenue projections for next fiscal year.",
     "done": false
   },
 
   {
     "id": 2,
-    "todo": "Carwash",
+    "todo": "Attempt monthly shower. Last month's was not a success.",
     "done": false
     
   },
 
   {
     "id": 3,
-    "todo": "Work",
+    "todo": "Return wrong-sized pants to store. Need to be bigger... Much, much bigger. (I'm not a size 30 waist anymore, Mom!)",
     "done": false
     
   }

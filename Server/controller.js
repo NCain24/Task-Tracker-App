@@ -24,11 +24,9 @@ module.exports = {
 
     updateTodo: (req, res) => {
         const i = todos.findIndex(el => el.id === +req.params.id)
-        const {crossOff} = req.body
+        const {edit} = req.body
 
-        if (crossOff === true) {
-            todos[i].checked === true
-        }
+        let 
     },
 
     deleteTodo: (req, res) => {

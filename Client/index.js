@@ -3,10 +3,16 @@ const baseURL = 'http://localhost:4005'
 const addTodo = document.querySelector('#add-todo')
 const showTodo = document.querySelector('#show-todo')
 const enterInput = document.querySelector('#todo-input')
+const deleteAllBtn = document.querySelector('#delete-all')
 
 const showTime = () => {
     const date = new Date()
     document.querySelector('#date-time').innerHTML= date.toLocaleDateString()
+}
+
+const strikeThrough = () => {
+    const todoStrike = document.querySelector('h3')
+    todoStrike.style.textDecorationLine = "line-through"
 }
 
 const createTodoContainer = (task) => {
@@ -48,9 +54,12 @@ const addNewTodo = () => {
 }
 
 
-const updateTodo = (id) => {
+const updateTodo = (id, input) => {
     axios.put(`${baseURL}/updateTodo/${id}`)
-
+    .then(res => {
+        showTodo.innerHTML = input.value
+        updateTodo(res.data)
+    })
 }
 
 const deleteTodo = (id) => {
