@@ -99,7 +99,6 @@ input[type="text"] {
     opacity: 50%;
     font-size: 20px;
     color:#FFB660;
-    /* text-align: center; */
 }
 
 #add-todo {
@@ -181,17 +180,6 @@ button, .delete {
     align-items: center;
 }
 
-/*DELETE ALL BUTTON*/
-
-#delete-all {
-    font-size: 30px;
-    background-color: black;
-    border-radius: 5px;
-    border: 1px solid #89CFF0;
-    width: 10%;
-    padding-top: 8px;
-}
-
 /*FOOTER*/
 
 #footer {
@@ -241,7 +229,7 @@ img {
 }
 
 /*KEYFRAMES FOR TITLE*/
-/* 
+ 
 @keyframes pulsate {
     100% {
 
@@ -294,5 +282,4 @@ img {
         0 0 70px #89CFF0,
         0 0 80px #89CFF0;
     }
-  } */
-  
+  }

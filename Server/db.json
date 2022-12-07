@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "todo": "Meeting with the Mayor to discuss revenue projections for next fiscal year.",
+    "todo": "Grab a coffee with my best friends.",
     "done": false
   },
 
   {
     "id": 2,
-    "todo": "Attempt monthly shower. Last month's was not a success.",
+    "todo": "Take the pets on a walk around the park.",
     "done": false
     
   },
 
   {
     "id": 3,
-    "todo": "Return wrong-sized pants to store. Need to be bigger... Much, much bigger. (I'm not a size 30 waist anymore, Mom!)",
+    "todo": "Meditate for 15 minutes to feel refreshed.",
     "done": false
     
   }
