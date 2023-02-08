@@ -2,7 +2,7 @@
 A calming take on a to-do list, tASKtRACK makes creating a list simple and easy to do by having minimal features that aren't necessary to create a list for your daily adventures. Although this app was created in under a week, the aesthetic appeal should feel welcoming to anyone who gets a little anxious when planning out all of their tasks for the day.
 ![tASKtRACK Homepage](/Client/images/tasktrack.png)
 
-tASKtRACK was create by Noah Cain. Noah enjoys building simple user-apps that take the guesswork out of where to go next, while providing detailed, and to-the-point functionality that is easy to use by anyone. This app is still a work in progress, with more features to come. The end goal is to keep it simplistic, while making sure it is not lacking any details that a user would like to see.
+tASKtRACK was created by Noah Cain. Noah enjoys building simple user-apps that take the guesswork out of where to go next, while providing detailed, and to-the-point functionality that is easy to use by anyone. This app is still a work in progress, with more features to come. The end goal is to keep it simplistic, while making sure it is not lacking any details that a user would like to see.
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
